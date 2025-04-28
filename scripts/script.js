@@ -1,5 +1,5 @@
 (() => {
-    const mobileSwiper = new Swiper('.es-swiper-mobile', {
+    const mobileSwiper = new Swiper('#es-rc .es-swiper-mobile', {
         loop: true,
         autoHeight: false,
         autoplay: {
@@ -7,16 +7,16 @@
         disableOnInteraction: true,
         },
         pagination: {
-        el: '.es-swiper-mobile-pagination',
+        el: '#es-rc .es-swiper-mobile-pagination',
         clickable: true,
         },
         navigation: {
-        nextEl: '.es-swiper-mobile-next',
-        prevEl: '.es-swiper-mobile-prev',
+        nextEl: '#es-rc .es-swiper-mobile-next',
+        prevEl: '#es-rc .es-swiper-mobile-prev',
         },
     });
 
-    const desktopSwiper = new Swiper('.es-swiper-desktop', {
+    const desktopSwiper = new Swiper('#es-rc .es-swiper-desktop', {
             loop: true,
             autoHeight: true,
             autoplay: {
@@ -24,12 +24,12 @@
             disableOnInteraction: true,
         },
             pagination: {
-            el: '.es-swiper-desktop-pagination',
+            el: '#es-rc .es-swiper-desktop-pagination',
             clickable: true,
         },
             navigation: {
-            nextEl: '.es-swiper-desktop-next',
-            prevEl: '.es-swiper-desktop-prev',
+            nextEl: '#es-rc .es-swiper-desktop-next',
+            prevEl: '#es-rc .es-swiper-desktop-prev',
         },
     });
 })()
